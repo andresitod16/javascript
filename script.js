@@ -1,6 +1,4 @@
-let base = Number(prompt("Ingrese la base del triángulo"));
-let altura = Number(prompt("Ingrese la altura del triángulo"));
+let milimetros = Number(prompt("Ingrese la cantidad de milímetros"));
+let centimetros = milimetros / 10;
 
-let area = (base * altura) / 2;
-
-alert("El área del triángulo es: " + area);
+alert("Los milímetros en centímetros son: " + centimetros);
