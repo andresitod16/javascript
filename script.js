@@ -1,5 +1,5 @@
-let lado = Number(prompt("ingrese el lado"));
+let segundos = Number(prompt("ingrese la cantidad de segundos"));
+let minutos = (60);
+let convertidor = (segundos / 60);
 
-let resultado = (lado * 4);
-
-alert("el perimetro del cuadrado es: " + resultado);
+alert("segundos en minutos son: " + convertidor);
