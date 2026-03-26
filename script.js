@@ -1,11 +1,8 @@
-let kilometros= Number(prompt ("cuantos kilometros son"));
-let metros= (kilometros*1000);
-alert ("tu resultado en metros es " +metros)
 
+let edad = Number (prompt("ingresa tu edad"));
+let canina = (edad * 7);
 
-metros= Number(prompt("cuantos metros son"))
-kilometros=(kilometros/1000)
-alert("tu resultado en kilometros son "  + kilometros)
+alert ("tu edad canina es " + canina);
 
 
 
