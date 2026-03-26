@@ -1,13 +1,13 @@
-let pesos = Number(prompt("ingrese el valor de su dinero en pesos"))
-let dolares= (4000)
-let conversion =( pesos / dolares)
-alert("tu valor en dolares es " + conversion )
+let grados = Number(prompt("ingrese la cantidad de grados")) ;
+let fahrenheit= (1.8);
+let convertidor =  (grados* 1.8);
+alert ("tus grados en fahrenit son: " + convertidor)
 
-dolares= Number(prompt("ingrese el valor de su dinero en dolares"))
-pesos= (0.00027)
-conversion = (dolares * pesos ) 
-alert("tu valor en pesos es " + conversion )
+fahrenheit = Number (prompt("ingresa la cantidad de faherenheit "));
+ grados = (33.8);
 
+convertidor =  ( fahrenheit * 33.8);
+alert ("tus fahrenit en grados son: " + convertidor)
 
 
 
