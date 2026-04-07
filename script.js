@@ -1,11 +1,16 @@
-let personas = Number(prompt("Cuantas personas comieron?"));
-let nombre = prompt("Quien comió mas?");
-let total = 250000;
-let cada_uno = total / personas;
-let resultado = cada_uno * 2
-alert( nombre  + " es quien paga más y debe pagar " + resultado);
+let productos = [];
 
+let p1 = prompt("que producto desea?");
 
+let p2 = prompt("que producto desea?");
+
+let p3= prompt("que producto desea?");
+
+productos.push ( p1 );
+productos.push ( p2 );
+productos.push ( p3 );
+
+console.log [productos];
 
 
 
