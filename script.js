@@ -107,9 +107,9 @@ const estudiantes = [
 for (let i = 0; i < estudiantes.length; i++) {
 
     if (estudiantes[i].notafinal >= 3.0) {
-        console.log(estudiantes[i].nombre + " " + estudiantes[i].apellido + " pasa");
+        console.log(`${estudiantes[i].nombre} ${estudiantes[i].apellido} pasa`);
     } else {
-        console.log(estudiantes[i].nombre + " " + estudiantes[i].apellido + " pierde");
+        console.log(`${estudiantes[i].nombre} ${estudiantes[i].apellido} pierde`);
     }
 
 }
