@@ -82,11 +82,34 @@
 
 // console.log("La palabra más corta es: " + masCorta);
 
-const palabras = ["javascript", "backend",  "frontend", "html", "css", "java", "python"];
+//const palabras = ["javascript", "backend",  "frontend", "html", "css", "java", "python"];
 
-let invertido = [];
+//let invertido = [];
+//for (let i = palabras.length - 1; i >= 0; i--) {
+  //  invertido.push(palabras[i]);
 
-for (let i = palabras.length - 1; i >= 0; i--) {
-    invertido.push(palabras[i]);
+//console.log(invertido); 
+//}
+
+const estudiantes = [ 
+  { nombre: "juan", apellido: "perez", notafinal: 4.5 },
+  { nombre: "ana", apellido: "lopez", notafinal: 2.8 },
+  { nombre: "carlos", apellido: "ruiz", notafinal: 3.2 },
+  { nombre: "maria", apellido: "gomez", notafinal: 4.0 },
+  { nombre: "luis", apellido: "martinez", notafinal: 2.5 },
+  { nombre: "sofia", apellido: "hernandez", notafinal: 3.8 },
+  { nombre: "diego", apellido: "torres", notafinal: 1.9 },
+  { nombre: "valentina", apellido: "castro", notafinal: 4.7 },
+  { nombre: "andres", apellido: "rojas", notafinal: 3.0 },
+  { nombre: "camila", apellido: "vargas", notafinal: 2.9 }
+];
+
+for (let i = 0; i < estudiantes.length; i++) {
+
+    if (estudiantes[i].notafinal >= 3.0) {
+        console.log(estudiantes[i].nombre + " " + estudiantes[i].apellido + " pasa");
+    } else {
+        console.log(estudiantes[i].nombre + " " + estudiantes[i].apellido + " pierde");
+    }
+
 }
-console.log(invertido);
