@@ -91,29 +91,85 @@
 //console.log(invertido); 
 //}
 
-const estudiantes = [ 
-  { nombre: "juan", apellido: "perez", notafinal: 4.5 },
-  { nombre: "ana", apellido: "lopez", notafinal: 2.8 },
-  { nombre: "carlos", apellido: "ruiz", notafinal: 3.2 },
-  { nombre: "maria", apellido: "gomez", notafinal: 4.0 },
-  { nombre: "luis", apellido: "martinez", notafinal: 2.5 },
-  { nombre: "sofia", apellido: "hernandez", notafinal: 3.8 },
-  { nombre: "diego", apellido: "torres", notafinal: 1.9 },
-  { nombre: "valentina", apellido: "castro", notafinal: 4.7 },
-  { nombre: "andres", apellido: "rojas", notafinal: 3.0 },
-  { nombre: "camila", apellido: "vargas", notafinal: 2.9 }
-];
+//const estudiantes = [ 
+  //{ nombre: "juan", apellido: "perez", notafinal: 4.5 },
+  //{ nombre: "ana", apellido: "lopez", notafinal: 2.8 },
+  //{ nombre: "carlos", apellido: "ruiz", notafinal: 3.2 },
+  //{ nombre: "maria", apellido: "gomez", notafinal: 4.0 },
+  //{ nombre: "luis", apellido: "martinez", notafinal: 2.5 },
+  //{ nombre: "sofia", apellido: "hernandez", notafinal: 3.8 },
+  //{ nombre: "diego", apellido: "torres", notafinal: 1.9 },
+  //{ nombre: "valentina", apellido: "castro", notafinal: 4.7 },
+  //{ nombre: "andres", apellido: "rojas", notafinal: 3.0 },
+  //{ nombre: "camila", apellido: "vargas", notafinal: 2.9 }
+//];
 
-for (let i = 0; i < estudiantes.length; i++) {
+//for (let i = 0; i < estudiantes.length; i++) { 
+  //  let nombre = estudiantes[i].nombre;
+    //let apellido = estudiantes[i].apellido;
+    //let nota = estudiantes[i].notafinal;
+    //if (nota >= 3.0) {
+      //  console.log(`El estudiante ${nombre} ${apellido} pasa con nota ${nota}`);
+    //} else {
+    //    console.log(`El estudiante ${nombre} ${apellido} pierde con nota ${nota}`);
+  //  }
+//}
 
-    let nombre = estudiantes[i].nombre;
-    let apellido = estudiantes[i].apellido;
-    let nota = estudiantes[i].notafinal;
 
-    if (nota >= 3.0) {
-        console.log(`El estudiante ${nombre} ${apellido} pasa con nota ${nota}`);
-    } else {
-        console.log(`El estudiante ${nombre} ${apellido} pierde con nota ${nota}`);
-    }
+//let numero = Math.floor((Math.random() * 10) + 1);
+//let intentos = 6;
 
+//while (intentos > 0) {
+ //   let jugador = prompt("aivina el numero de 1 a 10");
+
+   // if (jugador == numero) {
+       // console.log("ganaste");
+        //break;
+   // } else {
+     //   if (intentos == 3) {
+       //     intentos = 2;
+       // } else if (intentos == 2) {
+         //   intentos = 1;
+        //} else if (intentos == 1) {
+          //  intentos = 0;
+        //}
+
+        //console.log("Perdiste una vida");
+    //}
+//}
+
+//if (intentos === 0) {
+  //  console.log("perdiste el juego. El numero era: " + numero);
+//}
+
+//let año = prompt("Ingresa un año");
+
+//if (año % 4 == 0) {
+  //  if (año % 100 == 0) {
+    //    if (año % 400 == 0) {
+      //      console.log("Es año bisiesto");
+        //} else {
+          //  console.log("No es bisiesto");
+        //}
+        // } else {
+        //console.log("Es año bisiesto");
+    //}
+//} else {
+  //  console.log("No es bisiesto");
+//}
+
+let mes = prompt("Ingresa un mes 1-12");
+
+if (mes >= 3 && mes <= 5) {
+    console.log("primavera");
+} else if (mes >= 6 && mes <= 8) {
+    console.log("verano");
+} else if (mes >= 9 && mes <= 11) {
+    console.log("otoño");
+} else if (mes >= 1 && mes <= 2) {
+    console.log("invierno");
+} else if (mes == 12) {
+    console.log("invierno");
+} else {
+    console.log("mes inválido");
 }
