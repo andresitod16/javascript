@@ -158,18 +158,102 @@
   //  console.log("No es bisiesto");
 //}
 
-let mes = prompt("Ingresa un mes 1-12");
+//let mes = prompt("ingresa un mes 1-12");
 
-if (mes >= 3 && mes <= 5) {
-    console.log("primavera");
-} else if (mes >= 6 && mes <= 8) {
-    console.log("verano");
-} else if (mes >= 9 && mes <= 11) {
-    console.log("otoño");
-} else if (mes >= 1 && mes <= 2) {
-    console.log("invierno");
-} else if (mes == 12) {
-    console.log("invierno");
-} else {
-    console.log("mes inválido");
-}
+//if (mes >= 3 && mes <= 5) {
+  //  console.log("primavera");
+//} else if (mes >= 6 && mes <= 8) {
+//    console.log("verano");
+//} else if (mes >= 9 && mes <= 11) {
+ //   console.log("otoño");
+//} else if (mes >= 1 && mes <= 2) {
+  //  console.log("invierno");
+//} else if (mes == 12) {
+  //  console.log("invierno");
+//} else {
+ //   console.log("mes inválido");
+//}
+
+//let data = [2024, 2026, 3000, 2100];
+
+//for (let i = 0; i < data.length; i++) {
+  //  let año = data[i];
+
+    //if (año % 400 === 0) {
+      //  console.log(year + " es bisiesto");
+    //} else if (año % 100 === 0) {
+      //  console.log(añov + " no es bisiesto");
+    //} else if (año % 4 === 0) {
+      //  console.log(año + " es bisiesto");
+    //} else {
+      //  console.log(año + " no es bisiesto");
+   // }
+//}
+let btn1 = document.getElementById("btn1");
+
+btn1.addEventListener("click", () => {
+
+    alert("boton 1");
+
+    let numero = Math.floor((Math.random() * 10) + 1);
+    let intentos = 6;
+
+    while (intentos > 0) {
+        let jugador = prompt("Adivina el número del 1 al 10");
+
+        if (jugador == numero) {
+            alert("Ganaste");
+            break;
+        } else {
+            intentos--;
+            alert("Te quedan: " + intentos);
+        }
+    }
+
+    if (intentos === 0) {
+        alert("Perdiste. El número era: " + numero);
+    }
+
+});
+
+let btn2 = document.getElementById("btn2");
+
+btn2.addEventListener("click", () => {
+
+    let options = ["piedra", "papel", "tijera"];
+    let azar = Math.floor(Math.random() * 3);
+    let computer = options[azar];
+
+    let jugador = prompt("selecciona: piedra, papel o tijera");
+    if (jugador == computer) {
+        alert("empate");
+    } else if (jugador == "piedra") {
+        if (computer == "tijera") {
+            alert("ganaste");
+             } else {
+            alert("perdiste");
+        }
+    } else if (jugador == "papel") {
+        if (computer == "piedra") {
+            alert("ganaste");
+        } else {
+            alert("perdiste");
+        }
+    } else if (jugador == "tijera") {
+        if (computer == "papel") {
+            alert("ganaste");
+        } else {
+            alert("perdiste");
+        }
+    } else {
+        alert("opcion invalida");
+    }
+
+    alert("la computadora eligio: " + computer);
+
+});
+
+let btn3 = document.getElementById ("btn3");
+btn3. addEventListener("click ", () => {
+  alert ("boton 3")
+})
