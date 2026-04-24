@@ -40,3 +40,4 @@ else {
 }
   console.log(persona.nombre + ": " + promedio + " - " + estado);
 }
+
